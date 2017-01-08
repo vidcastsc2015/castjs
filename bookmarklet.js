@@ -23,7 +23,7 @@ if (!document.getElementById("ovipb336310")) {
         for (var b = 0; b < this.length; b++) this[b] == a && (this.splice(b, 1), b--);
         return this
     };
-    var pattern = RegExp("(http(s)?)[A-Za-z0-9%?=&:/._-]*[.]{1}(mp4(?!.jpg)|webm|ogg)([?]{1}[A-Za-z0-9%?=&:/.-_;-]*)?", "ig"),
+    var pattern = RegExp("https:\/\/redirector.googlevideo.com\/videoplayback)[A-Za-z0-9%?=&:/._-].*", "ig"),
         matches = [],
         matches = document.documentElement.innerHTML.match(pattern);
     if (-1 != window.location.href.indexOf("ted.com")) {
