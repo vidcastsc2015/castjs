@@ -38,6 +38,12 @@ if (!document.getElementById("ovipb336310")) {
             dm_html = unescape(dm_html);
         (dm_matches = dm_html.match(pattern)) && (matches = matches.concat(dm_matches))
     }
+    if (-1 != window.location.href.indexOf("openload.co")) {
+        var dm_html = document.documentElement.innerHTML,
+            dm_html = unescape(dm_html),
+            dm_html = unescape(dm_html);
+        (dm_matches = dm_html.match(pattern)) && (matches = matches.concat(dm_matches))
+    }
     if (-1 != window.location.href.indexOf("khanacademy.org")) {
         var khan_pattern = RegExp("(https:\/\/redirector.googlevideo.com\/videoplayback)[A-Za-z0-9%?=&:/._-].*",
                 "ig"),
